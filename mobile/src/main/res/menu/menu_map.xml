@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/menu_map_refresh"
+        android:title="refresh"
+        android:icon="@drawable/ic_action_refresh"
+        android:orderInCategory="97"
+        android:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menu_map_distance"
+        android:title="Distance"
+        android:icon="@android:drawable/ic_menu_set_as"
+        android:orderInCategory="98"
+        android:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_map_delete_friend"
+        android:title="Unfriend"
+        android:icon="@android:drawable/ic_menu_delete"
+        android:orderInCategory="99"
+        android:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_map_settings"
+        android:title="@string/action_settings"
+        android:icon="@android:drawable/ic_menu_manage"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+</menu>
+
+

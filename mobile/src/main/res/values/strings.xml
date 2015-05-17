@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">Love Tracker</string>
+    <string name="select_profile_image">Select Profile Image</string>
+    <string name="send">Send</string>
+    <string name="clear">Clear</string>
+    <string name="location">Location</string>
+
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item>Home</item>
+        <item>My Location</item>
+        <item>Profile</item>
+        <item>Requests</item>
+        <item>Pages</item>
+        <item>What\'s Hot</item>
+    </string-array>
+
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/ic_action_group</item>
+        <item>@android:drawable/ic_menu_myplaces</item>
+        <item>@drawable/ic_action_person</item>
+        <item>@android:drawable/ic_menu_add</item>
+        <item>@android:drawable/ic_menu_today</item>
+        <item>@android:drawable/ic_menu_more</item>
+    </array>
+
+    <!-- setting -->
+    <string name="display_name">Display name</string>
+    <string name="random_person">Random Person</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_send_feedback">Send Feedback</string>
+    <string name="title_activity_profile_setting">Profile Setting</string>
+    <string-array name="pref_distance_unit_list_titles">
+        <item>Miles</item>
+        <item>Kilometers</item>
+    </string-array>
+    <string-array name="pref_distance_unit_list_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+    <string-array name="pref_custom_msg_list_titles">
+        <item>Come!</item>
+        <item>Come?</item>
+        <item>Here!</item>
+        <item>Here?</item>
+        <item>Done!</item>
+        <item>Done?</item>
+        <item>Go!</item>
+        <item>Go?</item>
+    </string-array>
+    <string name="title_activity_widget_config">Select A Person</string>
+
+    <string name="title_action_add_friend">Add New Contact</string>
+    <string name="title_action_clear_history">Clear History</string>
+    <string name="title_activity_activity_recognition">ActivityRecognitionActivity</string>
+
+    <!-- Activity detection strings -->
+    <string name="in_vehicle">In a vehicle</string>
+    <string name="on_bicycle">On a bicycle</string>
+    <string name="on_foot">On foot</string>
+    <string name="running">Running</string>
+    <string name="still">Still</string>
+    <string name="tilting">Tilting</string>
+    <string name="unknown">Unknown activity</string>
+    <string name="walking">Walking</string>
+    <string name="unidentifiable_activity">Unidentifiable activity: %1$d</string>
+</resources>

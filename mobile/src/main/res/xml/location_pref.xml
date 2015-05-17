@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="GPS">
+
+        <SwitchPreference
+            android:key="GPS_preference"
+            android:title="Turn GPS on or off"
+            android:summary="Your location will be accurate, but battery will significant drain faster"
+            android:defaultValue="false" />
+
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <Button
+        android:id="@+id/btn_crop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select image"
+        android:layout_above="@+id/iv_photo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp" />
+
+    <ImageView
+        android:id="@+id/iv_photo"
+        android:transitionName="photo_hero"
+        android:src="@drawable/ic_action_person"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="256dp"
+        android:layout_height="256dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/edit_photo"
+        android:src="@android:drawable/ic_menu_edit"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/iv_photo"
+        android:layout_alignEnd="@+id/iv_photo" />
+
+</RelativeLayout>

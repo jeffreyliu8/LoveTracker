@@ -1,0 +1,78 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Receive">
+
+        <!-- NOTE: ListPreference's summary should be set to its value by the activity code. -->
+        <ListPreference
+            android:key="distance_unit"
+            android:title="Distance Unit"
+            android:defaultValue="0"
+            android:entries="@array/pref_distance_unit_list_titles"
+            android:entryValues="@array/pref_distance_unit_list_values"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null" />
+
+        <SwitchPreference
+            android:key="display_notification_map_preference"
+            android:title="Enable quick view of friend location"
+            android:summary="Display a small map of friend location in notification"
+            android:defaultValue="true"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Reply">
+
+        <!-- A 'parent' preference, which enables/disables child preferences (below)
+         when checked/unchecked. -->
+        <CheckBoxPreference
+            android:key="custom_msg1_switch"
+            android:title="Custom left button"
+            android:defaultValue="false" />
+
+        <ListPreference
+            android:dependency="custom_msg1_switch"
+            android:key="custom_msg1"
+            android:title="Custom message"
+            android:defaultValue="Buzz"
+            android:entries="@array/pref_custom_msg_list_titles"
+            android:entryValues="@array/pref_custom_msg_list_titles"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null" />
+
+        <!-- A 'parent' preference, which enables/disables child preferences (below)
+         when checked/unchecked. -->
+        <CheckBoxPreference
+            android:key="custom_msg2_switch"
+            android:title="Custom right button"
+            android:defaultValue="false" />
+
+        <ListPreference
+            android:dependency="custom_msg2_switch"
+            android:key="custom_msg2"
+            android:title="Custom message"
+            android:defaultValue="Buzz"
+            android:entries="@array/pref_custom_msg_list_titles"
+            android:entryValues="@array/pref_custom_msg_list_titles"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null" />
+
+        <!-- A 'parent' preference, which enables/disables child preferences (below)
+         when checked/unchecked. -->
+        <!--<CheckBoxPreference-->
+            <!--android:key="custom_msg3_switch"-->
+            <!--android:title="Use custom button 3"-->
+            <!--android:defaultValue="false" />-->
+
+        <!--<ListPreference-->
+            <!--android:dependency="custom_msg3_switch"-->
+            <!--android:key="custom_msg3"-->
+            <!--android:title="Custom message"-->
+            <!--android:defaultValue="Buzz"-->
+            <!--android:entries="@array/pref_custom_msg_list_titles"-->
+            <!--android:entryValues="@array/pref_custom_msg_list_titles"-->
+            <!--android:negativeButtonText="@null"-->
+            <!--android:positiveButtonText="@null" />-->
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

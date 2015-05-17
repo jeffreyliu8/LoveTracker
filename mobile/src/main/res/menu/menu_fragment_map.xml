@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="@string/title_action_clear_history"
+        android:icon="@android:drawable/ic_menu_delete"
+        android:id="@+id/action_settings_clear_location"
+        android:orderInCategory="99"
+        android:showAsAction="ifRoom" />
+</menu>

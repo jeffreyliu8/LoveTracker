@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Quick Send">
+
+        <!-- A 'parent' preference, which enables/disables child preferences (below)
+         when checked/unchecked. -->
+        <CheckBoxPreference
+            android:key="widget_msg1_switch"
+            android:title="Custom left button"
+            android:defaultValue="false" />
+
+        <ListPreference
+            android:dependency="widget_msg1_switch"
+            android:key="widget_msg1"
+            android:title="Custom message"
+            android:defaultValue="Buzz"
+            android:entries="@array/pref_custom_msg_list_titles"
+            android:entryValues="@array/pref_custom_msg_list_titles"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null" />
+
+        <!-- A 'parent' preference, which enables/disables child preferences (below)
+         when checked/unchecked. -->
+        <CheckBoxPreference
+            android:key="widget_msg2_switch"
+            android:title="Custom right button"
+            android:defaultValue="false" />
+
+        <ListPreference
+            android:dependency="widget_msg2_switch"
+            android:key="widget_msg2"
+            android:title="Custom message"
+            android:defaultValue="Buzz"
+            android:entries="@array/pref_custom_msg_list_titles"
+            android:entryValues="@array/pref_custom_msg_list_titles"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null" />
+
+        <!-- A 'parent' preference, which enables/disables child preferences (below)
+         when checked/unchecked. -->
+        <!--<CheckBoxPreference-->
+        <!--android:key="widget_msg3_switch"-->
+        <!--android:title="Use custom button 3"-->
+        <!--android:defaultValue="false" />-->
+
+        <!--<ListPreference-->
+        <!--android:dependency="widget_msg3_switch"-->
+        <!--android:key="widget_msg3"-->
+        <!--android:title="Custom message"-->
+        <!--android:defaultValue="Buzz"-->
+        <!--android:entries="@array/pref_custom_msg_list_titles"-->
+        <!--android:entryValues="@array/pref_custom_msg_list_titles"-->
+        <!--android:negativeButtonText="@null"-->
+        <!--android:positiveButtonText="@null" />-->
+
+    </PreferenceCategory>
+</PreferenceScreen>
